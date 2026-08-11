@@ -1,0 +1,39 @@
+[project]
+name = "healthcare"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shaikh-NM", email = "wizice855@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "dvc>=3.67.1",
+    "dvc-s3>=3.3.0",
+    "evidently>=0.7.21",
+    "fastapi>=0.141.1",
+    "httpx>=0.28.1",
+    "imbalanced-learn>=0.14.2",
+    "ipykernel>=7.3.0",
+    "joblib>=1.5.3",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.9",
+    "mlflow>=3.15.1",
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "pydantic>=2.13.4",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.2",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+    "sqlalchemy>=2.0.51",
+    "uvicorn>=0.52.1",
+    "xgboost>=3.2.0",
+]
+
+[project.scripts]
+healthcare = "healthcare:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
